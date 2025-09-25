@@ -75,7 +75,7 @@ def hometown_info():
    return home_town_message
 
 # Call the function and print the result
-
+print('Exercise 4:', hometown_info())
 
 # Exercise 5: Iterating Over Dictionary Items
 #
@@ -83,8 +83,16 @@ def hometown_info():
 # Use a for loop to iterate over the key: value pairs in the home_town dictionary and append a string with the following format to home_town_items: "<key> = <value>"
 
 def list_home_town_items():
+    home_town = {
+       'city': 'Detroit Lakes',
+       'state': 'Minnesota',
+       'population': 16000
+   }
     home_town_items = []
-    for key, value in home_town:
+    for key, value in home_town.items():
+        item = f"{key} = {value}"
+        home_town_items.append(item)
+    return home_town_items
 
 
 # Call the function and print the result
